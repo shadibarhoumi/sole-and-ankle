@@ -20,15 +20,8 @@ const Header = () => {
           <Logo />
         </LogoWrapper>
         <DesktopNav>
-          {/* <NavLink href="/sale">Sale</NavLink>
-          <NavLink href="/new">nouvelles produits</NavLink>
-          <NavLink href="/men">hommes</NavLink>
-          <NavLink href="/women">Women</NavLink>
-          <NavLink href="/kids">Pour les enfants</NavLink>
-          <NavLink href="/collections">Collections</NavLink> */}
           <NavLink href="/sale">Sale</NavLink>
           <NavLink href="/new">New&nbsp;Releases</NavLink>
-          <NavLink href="/men">Men</NavLink>
           <NavLink href="/men">Men</NavLink>
           <NavLink href="/women">Women</NavLink>
           <NavLink href="/kids">Kids</NavLink>
@@ -36,15 +29,15 @@ const Header = () => {
         </DesktopNav>
         <MobileActions>
           <ShoppingBagButton>
-            <Icon id="shopping-bag" size={24} strokeWidth={2} color={COLORS.gray[900]} />
+            <Icon id="shopping-bag" size={24} strokeWidth={2} color={`hsl(${COLORS.gray[900]})`} />
             <VisuallyHidden>Open cart</VisuallyHidden>
           </ShoppingBagButton>
           <UnstyledButton>
-            <Icon id="search" size={24} strokeWidth={2} color={COLORS.gray[900]} />
+            <Icon id="search" size={24} strokeWidth={2} color={`hsl(${COLORS.gray[900]})`} />
             <VisuallyHidden>Search</VisuallyHidden>
           </UnstyledButton>
           <UnstyledButton onClick={() => setShowMobileMenu(true)}>
-            <Icon id="menu" size={24} strokeWidth={2} color={COLORS.gray[900]} />
+            <Icon id="menu" size={24} strokeWidth={2} color={`hsl(${COLORS.gray[900]})`} />
             <VisuallyHidden>Open menu</VisuallyHidden>
           </UnstyledButton>
         </MobileActions>
